@@ -66,7 +66,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows-binary
-          path: build//windows
+          path: build/windows
 
       - name: Commit and push changes
         run: |
