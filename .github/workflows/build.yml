@@ -26,7 +26,7 @@ jobs:
         run: go mod download
 
       - name: Build for Linux
-        run: go build -o build/ubuntu/webcheck
+        run: go build -o build/ubuntu/gocrypt
 
       - name: Upload Linux artifact
         uses: actions/upload-artifact@v4
@@ -60,7 +60,7 @@ jobs:
         run: go mod download
 
       - name: Build for Windows
-        run: go build -o build/windows/webcheck.exe
+        run: go build -o build/windows/gocrypt.exe
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
